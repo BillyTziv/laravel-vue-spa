@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./laravel-backend
+      dockerfile: Dockerfile
+    ports:
+      - '8000:80'
+    volumes:
+      - ./laravel-backend:/var/www
+      - ./laravel-backend/public/build:/var/www/public/build
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      - APP_KEY=base64:YourKeyHere
+
+  node:
+    build:
+      context: ./vue3-frontend
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./vue3-frontend:/app
+    command: npm run dev

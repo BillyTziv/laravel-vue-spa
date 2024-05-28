@@ -1,0 +1,26 @@
+# .gitignore
+
+# Ignore node_modules directory (Vue.js dependencies)
+/node_modules
+/vue3-frontend/node_modules
+/laravel-backend/node_modules
+
+# Ignore .env files as they usually contain sensitive information
+.env
+/vue3-frontend/.env
+/laravel-backend/.env
+
+# Ignore Laravel specific files
+/laravel-backend/vendor/
+/laravel-backend/storage/*.key
+/laravel-backend/bootstrap/cache/
+/laravel-backend/.phpunit.result.cache
+
+# Ignore Vue.js specific files
+/vue3-frontend/dist/
+/vue3-frontend/.cache/
+/vue3-frontend/public/build/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db

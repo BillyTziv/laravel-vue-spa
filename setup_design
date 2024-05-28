@@ -1,0 +1,21 @@
+/project-root
+│
+├── laravel-backend
+│   ├── Dockerfile
+│   ├── nginx.conf
+│   ├── composer.json
+│   ├── routes
+│   │   ├── web.php
+│   │   └── api.php
+│   └── ... (other Laravel files and directories)
+│
+├── vue3-frontend
+│   ├── Dockerfile
+│   ├── src
+│   │   └── pages
+│   │       └── Home.vue
+│   ├── package.json
+│   ├── vite.config.js
+│   └── ... (other Vue files and directories)
+│
+└── docker-compose.yml
